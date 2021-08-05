@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Bondi</string>
+    <string name="todo">TODO</string>
+    <string name="search">Search</string>
+    <string name="arama">Arama</string>
+    <string name="haydi_ba_layal_m">Haydi Başlayalım</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

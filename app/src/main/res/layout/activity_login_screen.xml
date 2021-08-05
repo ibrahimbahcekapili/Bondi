@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".start.login_screen.">
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/bondi"
+                android:textSize="16sp"
+                android:text="Telefon numaranızı giriniz"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/textfield"
+            android:layout_below="@id/numberfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/black"
+                android:text="Size bir kod göndereceğiz."/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/numberfield"
+                android:layout_below="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="+"/>
+                <EditText
+                    android:id="@+id/ed_code_country"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:maxLines="1"
+                    android:hint="90"/>
+
+                <EditText
+                    android:id="@+id/ed_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:hint="telefon numarası"/>
+            </LinearLayout>
+<Button
+    android:id="@+id/nocode"
+    android:layout_below="@+id/ed_code"
+
+   android:visibility="gone"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Kod ulaşmadı"
+    android:textColor="@color/white"
+    android:backgroundTint="@color/cardview_shadow_start_color"/>
+            <EditText
+android:layout_below="@+id/bondilogo"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/ed_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="6"
+                android:inputType="numberPassword"
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:hint="Kodu Girin "/>
+        <ImageView
+
+            android:id="@+id/bondilogo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/bondi_logo"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+<ImageView
+    android:id="@+id/confirm"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/confirm"
+    android:layout_below="@+id/ed_code"
+    android:visibility="gone"/>
+<ImageView
+    android:id="@+id/loginphoto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/numberfield"
+    android:src="@drawable/login"
+   />
+
+
+        <Button
+            android:id="@+id/devam_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:background="@color/bondi"
+            android:textColor="@android:color/white"
+            android:text="Devam Et"/>
+    </RelativeLayout>
+
+</layout>

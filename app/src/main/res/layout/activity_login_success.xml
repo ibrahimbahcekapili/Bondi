@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".start.LoginSuccess">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/bondi"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text="Kaydınız Başarıyla Tamamlandı!"/>
+    <ImageView
+        android:id="@+id/success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loginsuccess"/>
+    <Button
+        android:id="@+id/devam_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:text="Devam et"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
+</layout>
